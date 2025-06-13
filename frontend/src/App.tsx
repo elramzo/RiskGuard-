@@ -261,74 +261,48 @@ function SearchForm() {
                   value={startDate}
                   onChange={(newValue) => setStartDate(newValue)}
                   format="d MMM"
-                  enableAccessibleFieldDOMStructure={false}
                   slotProps={{
                     textField: {
                       fullWidth: true,
                       required: false,
                       sx: {
-                        backgroundColor: '#3A3A3C',
-                        borderRadius: '12px',
-                        '& .MuiInputBase-root': {
-                          color: '#fff',
-                        },
-                        '& .MuiInputBase-input': {
-                          color: '#fff !important',
-                        },
                         '& .MuiInputLabel-root': {
                           fontSize: '14px',
                           color: '#fff',
-                          transform: 'translate(14px, 16px)',
+                          ml: 5,
+                          transform: 'translate(0, 16px)',
                           '&.Mui-focused, &.MuiFormLabel-filled': {
                             display: 'none'
                           }
                         },
-                        '& .MuiIconButton-root': {
+                        '& .MuiInputBase-input': {
+                          fontSize: '16px',
                           color: '#fff',
+                          pl: 5,
                         },
-                        '& .MuiOutlinedInput-notchedOutline': {
-                          border: 'none'
+                        '& .MuiInputAdornment-root': {
+                          position: 'absolute',
+                          zIndex: 1,
                         }
                       }
                     },
                     popper: {
                       sx: {
                         '& .MuiPaper-root': {
-                          backgroundColor: '#2C2C2E',
+                          bgcolor: '#2C2C2E',
                           color: '#fff',
                         },
                         '& .MuiPickersDay-root': {
                           color: '#fff',
                           '&.Mui-selected': {
-                            backgroundColor: '#0087E9',
+                            bgcolor: '#828293',
+                            '&:hover': {
+                              bgcolor: '#828293',
+                            }
                           },
                           '&:hover': {
-                            backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                            bgcolor: 'rgba(255, 255, 255, 0.08)',
                           }
-                        },
-                        '& .MuiDayCalendar-weekDayLabel': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersCalendarHeader-label': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersArrowSwitcher-button': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersYear-yearButton': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersCalendarHeader-switchViewButton': {
-                          color: '#fff',
-                        },
-                        '& .MuiYearCalendar-root button': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersYear-yearButton.Mui-selected': {
-                          backgroundColor: '#0087E9',
-                        },
-                        '& .MuiPickersCalendarHeader-switchViewIcon': {
-                          color: '#fff',
                         }
                       }
                     }
@@ -340,74 +314,48 @@ function SearchForm() {
                   onChange={(newValue) => setEndDate(newValue)}
                   minDate={startDate || undefined}
                   format="d MMM"
-                  enableAccessibleFieldDOMStructure={false}
                   slotProps={{
                     textField: {
                       fullWidth: true,
                       required: false,
                       sx: {
-                        backgroundColor: '#3A3A3C',
-                        borderRadius: '12px',
-                        '& .MuiInputBase-root': {
-                          color: '#fff',
-                        },
-                        '& .MuiInputBase-input': {
-                          color: '#fff !important',
-                        },
                         '& .MuiInputLabel-root': {
                           fontSize: '14px',
                           color: '#fff',
-                          transform: 'translate(14px, 16px)',
+                          ml: 5,
+                          transform: 'translate(0, 16px)',
                           '&.Mui-focused, &.MuiFormLabel-filled': {
                             display: 'none'
                           }
                         },
-                        '& .MuiIconButton-root': {
+                        '& .MuiInputBase-input': {
+                          fontSize: '16px',
                           color: '#fff',
+                          pl: 5,
                         },
-                        '& .MuiOutlinedInput-notchedOutline': {
-                          border: 'none'
+                        '& .MuiInputAdornment-root': {
+                          position: 'absolute',
+                          zIndex: 1,
                         }
                       }
                     },
                     popper: {
                       sx: {
                         '& .MuiPaper-root': {
-                          backgroundColor: '#2C2C2E',
+                          bgcolor: '#2C2C2E',
                           color: '#fff',
                         },
                         '& .MuiPickersDay-root': {
                           color: '#fff',
                           '&.Mui-selected': {
-                            backgroundColor: '#0087E9',
+                            bgcolor: '#828293',
+                            '&:hover': {
+                              bgcolor: '#828293',
+                            }
                           },
                           '&:hover': {
-                            backgroundColor: 'rgba(255, 255, 255, 0.08)',
+                            bgcolor: 'rgba(255, 255, 255, 0.08)',
                           }
-                        },
-                        '& .MuiDayCalendar-weekDayLabel': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersCalendarHeader-label': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersArrowSwitcher-button': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersYear-yearButton': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersCalendarHeader-switchViewButton': {
-                          color: '#fff',
-                        },
-                        '& .MuiYearCalendar-root button': {
-                          color: '#fff',
-                        },
-                        '& .MuiPickersYear-yearButton.Mui-selected': {
-                          backgroundColor: '#0087E9',
-                        },
-                        '& .MuiPickersCalendarHeader-switchViewIcon': {
-                          color: '#fff',
                         }
                       }
                     }

@@ -35,7 +35,16 @@ interface InsuranceOffer {
   features?: string[];
 }
 
-const SearchResults: React.FC = () => {
+// Интерфейс для пропсов
+interface SearchResultsProps {
+  country: string;
+  sport: string;
+  startDate: string;
+  endDate: string;
+}
+
+// Компонент, принимающий пропсы
+const SearchResults: React.FC<SearchResultsProps> = ({ country, sport, startDate, endDate }) => {
   const navigate = useNavigate();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
