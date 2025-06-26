@@ -406,17 +406,25 @@ function PolicyWrapper() {
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={ru}>
-        <Router>
-          <Routes>
-            <Route path="/" element={<SearchForm />} />
-            <Route path="/results" element={<ResultsWrapper />} />
-            <Route path="/policy" element={<PolicyWrapper />} />
-          </Routes>
-        </Router>
-      </LocalizationProvider>
-    </ThemeProvider>
+    <Box sx={{
+      minHeight: '100vh',
+      backgroundImage: "url('/background.png')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+    }}>
+      <ThemeProvider theme={theme}>
+        <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={ru}>
+          <Router>
+            <Routes>
+              <Route path="/" element={<SearchForm />} />
+              <Route path="/results" element={<ResultsWrapper />} />
+              <Route path="/policy" element={<PolicyWrapper />} />
+            </Routes>
+          </Router>
+        </LocalizationProvider>
+      </ThemeProvider>
+    </Box>
   );
 }
 
