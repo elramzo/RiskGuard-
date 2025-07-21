@@ -25,8 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "serve": "serve -s build",
     "test": "react-scripts test",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -51,6 +51,6 @@
   "devDependencies": {
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
-    "serve": "^14.2.1"
+    "eslint": "^8.57.1"
   }
 }

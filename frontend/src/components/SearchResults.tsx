@@ -7,18 +7,11 @@ import {
   CardContent,
   Button,
   IconButton,
-  Switch,
-  ToggleButton,
-  ToggleButtonGroup,
-  Stack,
   FormControlLabel,
   Radio,
   RadioGroup,
-  useMediaQuery,
-  useTheme,
   CircularProgress,
 } from '@mui/material';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom';
 
@@ -46,8 +39,6 @@ interface SearchResultsProps {
 // Компонент, принимающий пропсы
 const SearchResults: React.FC<SearchResultsProps> = ({ country, sport, startDate, endDate }) => {
   const navigate = useNavigate();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [offers, setOffers] = useState<InsuranceOffer[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
