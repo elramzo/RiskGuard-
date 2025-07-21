@@ -56,7 +56,7 @@ const PolicyDetails: React.FC<PolicyDetailsProps> = ({
   };
 
   return (
-    <Box sx={{ bgcolor: 'background.default', minHeight: '100vh', pt: 2, pb: 4 }}>
+    <Box sx={{ minHeight: '100vh', pt: 2, pb: 4 }}>
       <Container maxWidth="sm">
         {/* Шапка с кнопкой назад */}
         <Box sx={{ mb: 3, display: 'flex', alignItems: 'center', gap: 2 }}>

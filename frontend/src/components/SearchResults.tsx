@@ -91,7 +91,6 @@ const SearchResults: React.FC<SearchResultsProps> = ({ country, sport, startDate
   return (
     <Box 
       sx={{ 
-        bgcolor: 'background.default', 
         minHeight: '100vh', 
         py: 2,
         '& *::before': {
